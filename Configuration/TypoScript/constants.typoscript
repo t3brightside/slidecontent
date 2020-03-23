@@ -1,0 +1,10 @@
+# cat=Slidecontent/slidecontent; type=string; label= Styles file
+	slidecontent.styles = EXT:slidecontent/Resources/Public/Styles/slidecontent.css
+# cat=Slidecontent/slidecontent; type=string; label= Templates root paht
+	slidecontent.templateRootPath = EXT:slidecontent/Resources/Private/Templates/
+# cat=Slidecontent/slidecontent; type=string; label= Partials root paht
+	slidecontent.partialRootPath = EXT:slidecontent/Resources/Private/Partials/
+# cat=Slidecontent/slidecontent; type=string; label= Partials root paht
+	slidecontent.layoutRootPath = EXT:slidecontent/Resources/Private/Layouts/
+# cat=Slidecontent/slidecontent; type=string; label= Maximum image with in one column layout in px
+	slidecontent.imageWidth = 1320

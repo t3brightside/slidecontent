@@ -1,0 +1,34 @@
+page.includeCSS.slidecontent = {$slidecontent.styles}
+
+lib.slidecontent =< lib.contentElement
+lib.slidecontent.templateRootPaths.10 = EXT:slidecontent/Resources/Private/Templates/
+lib.slidecontent.templateRootPaths.20 = {$slidecontent.templateRootPath}
+lib.slidecontent.partialRootPaths.10 = EXT:slidecontent/Resources/Private/Partials/
+lib.slidecontent.partialRootPaths.20 = {$slidecontent.partialRootPath}
+lib.slidecontent.layoutRootPaths.10 = EXT:slidecontent/Resources/Private/Layouts/
+lib.slidecontent.layoutRootPaths.20 = {$slidecontent.layoutRootPath}
+
+tt_content.slidecontent =< lib.slidecontent
+tt_content.slidecontent {
+    templateName = Slidecontent
+    dataProcessing {
+        10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+        10 {
+            references.fieldName = assets
+            as = assets
+        }
+    }
+    settings {
+        imageWidth = {$slidecontent.imageWidth}
+    }
+    extbase {
+        pluginName = Slidecontent
+        controllerName = Slidecontent
+        controllerExtensionName = slidecontent
+        controllerActionName = show
+    }
+    stdWrap {
+        editIcons = tt_content: header [header_layout], tt_content
+        editIcons.iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
+    }
+}

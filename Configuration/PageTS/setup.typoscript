@@ -1,0 +1,32 @@
+
+mod.wizards.newContentElement.wizardItems.common {
+   elements {
+      slidecontent {
+         iconIdentifier = mimetypes-x-content-slidecontent
+         title = Slide
+         description = Image slide with link
+         tt_content_defValues {
+            CType = slidecontent
+         }
+      }
+   }
+   show := addToList(slidecontent)
+}
+
+TCEFORM.tt_content.tx_slidecontent_template.addItems {
+	0 = Style 1
+	1 = Style 2
+}
+
+
+TCEFORM.tt_content.tx_slidecontent_cropratio.addItems {
+	default = Default
+    tv = TV (4:3)
+    widescreen = Widescreen (16:9)
+    anamorphic = Anamorphic (2.39:1)
+	square = Square (1:1)
+    portrait = Portrait (3:4)
+    tower = Tower (9:16)
+    skyscraper = Skyscraper (1:2.39)
+    none = None
+}

@@ -11,12 +11,7 @@
 		</f:comment>
 		<f:variable name="imageWidth">{imageWidthSet}</f:variable>
 		<f:variable name="imageWidth_x2">{imageWidth * 2}</f:variable>
-		<f:if condition="{data.tx_slidecontent_template} == slide">
-			<div class="slidecontent template-{data.tx_slidecontent_template}">
-				<f:render partial="Slide" arguments="{_all}" />
-			</div>
-		</f:if>
-		<f:if condition="{data.tx_slidecontent_template} == slide">
+		<f:if condition="{data.tx_slidecontent_template} == 0">
 			<div class="slidecontent template-{data.tx_slidecontent_template}">
 				<f:render partial="Slide" arguments="{_all}" />
 			</div>

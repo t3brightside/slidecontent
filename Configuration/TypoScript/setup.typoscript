@@ -22,10 +22,10 @@ tt_content.slidecontent {
         imageWidth = {$slidecontent.imageWidth}
     }
     extbase {
-        pluginName = Slidecontent
         controllerName = Slidecontent
-        controllerExtensionName = slidecontent
-        controllerActionName = show
+        controllerActionName = slidecontent
+        controllerExtensionName = Slidecontent
+        pluginName = Slidecontent
     }
     stdWrap {
         editIcons = tt_content: header [header_layout], tt_content

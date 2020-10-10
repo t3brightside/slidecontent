@@ -7,5 +7,12 @@
 		\TYPO3\CMS\Core\Imaging\IconProvider\SvgIconProvider::class,
 		['source' => 'EXT:slidecontent/Resources/Public/Images/Icons/mimetypes-x-content-slidecontent.svg']
 	);
+	\TYPO3\CMS\Extbase\Utility\ExtensionUtility::configurePlugin(
+	    'slidecontent',
+	    'Slidecontent',
+	    [
+	        'Slidecontent' => 'slidecontent'
+	    ]
+	);
 
 $GLOBALS['TYPO3_CONF_VARS']['SC_OPTIONS']['cms/layout/class.tx_cms_layout.php']['tt_content_drawItem']['slidecontent'] = \Brightside\Slidecontent\Hooks\PageLayoutView\ContentElementPreviewRenderer::class;

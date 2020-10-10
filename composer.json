@@ -2,7 +2,7 @@
   "name": "t3brightside/slidecontent",
   "description": "TYPO3 CMS extension to create image slides with links.",
   "type": "typo3-cms-extension",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "keywords": ["TYPO3", "extension", "images", "slide", "content"],
   "homepage": "https://github.com/t3brightside/slidecontent/",
   "license": "GPL-3.0+",

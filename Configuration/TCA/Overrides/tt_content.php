@@ -147,7 +147,6 @@
                             'crop' => [
                             'config' => [
                                 'cropVariants' => [
-
                                     'default' => [
                                         'title' => 'LLL:EXT:lang/Resources/Private/Language/locallang_wizards.xlf:imwizard.crop_variant.default',
                                         'allowedAspectRatios' => [

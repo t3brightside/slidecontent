@@ -21,12 +21,6 @@ tt_content.slidecontent {
     settings {
         imageWidth = {$slidecontent.imageWidth}
     }
-    extbase {
-        controllerName = Slidecontent
-        controllerActionName = slidecontent
-        controllerExtensionName = Slidecontent
-        pluginName = Slidecontent
-    }
     stdWrap {
         editIcons = tt_content: header [header_layout], tt_content
         editIcons.iconTitle.data = LLL:EXT:fluid_styled_content/Resources/Private/Language/FrontendEditing.xlf:editIcon.menu
